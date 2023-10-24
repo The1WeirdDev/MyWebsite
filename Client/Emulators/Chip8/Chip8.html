@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Chip8</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/Client/Home/Style.css">
+        <style>
+            h1{
+                font-size:22px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a href="/home">Home</a>
+            <a href="/games" >Games</a>
+            <a href="/editors">Code Editors</a>
+            <a href="/emulators"">Emulators</a>
+        </div>
+        
+        <div>
+            <center>
+                <h1>Chip8</h1>
+                <canvas id="GameCanvas"></canvas>
+            </center>
+            <div id="OutputDiv" style="overflow-y:hidden; border:2px solid black; position:absolute;left:50px; top:87px;width:300px;height:400px;background:rgb(50, 50, 50);">
+                
+            </div>
+            <script src="/Client/Emulators/Chip8/Scripts/Chip8.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>3D Voxel game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/Client/Home/Style.css">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="/home">Home</a>
+            <a href="/games"">Games</a>
+            <a href="/editors">Code Editors</a>
+            <a href="/emulators">Emulators</a>
+        </div>
+        <canvas id="GameCanvas" class="fullscreen_canvas"></canvas>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Entities/Entity.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Entities/LocalPlayer.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Entities/NonLocalPlayer.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Shader.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Shaders/ChunkShader.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Shaders/NonLocalPlayerShader.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/UI/UIManager.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/UI/UI.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/UI/Frame.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Mesh.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Meshes/BasicMesh.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Meshes/ChunkMesh.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Meshes/PlayerMesh.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Meshes/UIFrameMesh.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Networking/Networking.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Libs/SimplexNoise.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Libs/Momentum.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Libs/gl-matrix.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/World/Block.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/World/World.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/World/LocalWorld.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/World/ServerWorld.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/World/Chunk.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Input/Keyboard.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Input/Mouse.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Utils/Frustom.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Utils/Time.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Utils/Vector.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Utils/Mathf.js"></script>
+
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Display.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Rendering/Texture.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Game.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Main.js"></script>
+    </body>
+</html>

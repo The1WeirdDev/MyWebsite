@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>2DVoxelGame</title>
+    </head>
+    <body style="background:gray">
+        <canvas id="GameCanvas"></canvas>
+        <script src="/Client/Engine/Engine.js"></script>
+        
+        <script src = "/socket.io/socket.io.js"></script>
+        
+        <script src="/Client/Games/2DVoxelGame/Entities/Player/Player.js"></script>
+        <script src="/Client/Games/2DVoxelGame/Entities/Player/LocalPlayer.js"></script>
+        <script src="/Client/Libs/gl-matrix.js"></script>
+        
+        <script id="GameLoader">
+            LoadScriptLoader(function(){
+                ScriptLoader.LoadScript("/Client/Games/2DVoxelGame/Main.js");
+            });
+        </script>
+    </body>
+</html>

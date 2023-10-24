@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Retail Simulator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/Client/Home/Style.css">
+    </head>
+    <body oncontextmenu="return false;">
+        <div class="topnav">
+            <a href="/home">Home</a>
+            <a href="/games"">Games</a>
+            <a href="/editors">Code Editors</a>
+            <a href="/emulators">Emulators</a>
+        </div>
+
+        <canvas id="GameCanvas"></canvas>
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Display.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Mesh.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Shader.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Texture.js"></script>
+
+        <script src="/Client/Games/RetailSimulator/Scripts/Store/Store.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Store/Tile.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Store/Tiles/WallTile.js"></script>
+
+        <script src="/Client/Games/RetailSimulator/Scripts/Input/Mouse.js"></script>
+        
+        <script src="/Client/Games/RetailSimulator/Scripts/Utils/Mathf.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Utils/Time.js"></script>
+        
+        <script src="/Client/Games/RetailSimulator/Scripts/Player/Camera.js"></script>
+        
+        <script src="/Client/Games/3DVoxelGame/Scripts/Libs/Momentum.js"></script>
+        <script src="/Client/Games/3DVoxelGame/Scripts/Libs/gl-matrix.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Meshes/NonTexturedMesh.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Meshes/TexturedMesh.js"></script>
+        
+        <script src="/Client/Games/RetailSimulator/Scripts/Rendering/Shaders/DefaultShader.js"></script>
+        
+        <script src="/Client/Games/RetailSimulator/Scripts/Game.js"></script>
+        <script src="/Client/Games/RetailSimulator/Scripts/RetailSimulator.js"></script>
+    </body>
+</html>
