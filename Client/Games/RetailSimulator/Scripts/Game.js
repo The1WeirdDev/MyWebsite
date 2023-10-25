@@ -7,7 +7,7 @@ class Game {
         Game.mesh = new NonTexturedMesh();
         Game.mesh.CreateMesh([0, 0, 0, 1, 1, 0, 1, 1], [0, 1, 2, 2, 1, 3]);
 
-        Game.camera_size = 10;
+        Game.camera_size = 15;
 
         Game.aspect_ratio = canvas.width / canvas.height;
         Game.CreateProjectionMatrix();

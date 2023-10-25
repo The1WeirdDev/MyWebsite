@@ -4,8 +4,8 @@ class Store {
     }
 
     Init(){
-        this.map_width = 30;
-        this.map_height = 30;
+        this.map_width = 100;
+        this.map_height = 100;
         this.map = new Array(this.map_width * this.map_height);
 
         this.texture_id = Texture.LoadTexture(gl, "/Client/Games/RetailSimulator/Res/TextureAtlas.png");
@@ -26,6 +26,7 @@ class Store {
 
         for(var x = 0;x < 10; x++){
             for(var y = 0;y < 10; y++){
+                if(x == 0 || y == 0 || x == 9 || y == 9)
                 this.map[(y * this.map_width) + x].SetTileType(TileType.Wall);
             }
         }

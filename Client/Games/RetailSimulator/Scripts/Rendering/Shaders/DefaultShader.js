@@ -17,7 +17,7 @@ class DefaultShader extends Shader {
         out vec2 _texture_coord;
         
         void main(){
-            _texture_coord = vec2(texture_coord.x + (float(tile_texture % 8) * 0.125), texture_coord.y + (floor(float(tile_texture) / 8.0) * 0.125));
+            _texture_coord = vec2(texture_coord.x + (float(tile_texture % 32) * 0.03125) + (0.0125 / 1024.0), texture_coord.y + (floor(float(tile_texture) / 32.0) * 0.03125) + (0.0125 / 1024.0));
             gl_Position = projection_matrix * view_matrix * transformation_matrix * vec4(position, 0, 1.0);
         } `;
         var fragment_data = `#version 300 es

@@ -1,5 +1,5 @@
 const canvas = document.getElementById("GameCanvas");
-const gl = canvas.getContext("webgl2", { premultipliedAlpha: true, antialias: false });
+const gl = canvas.getContext("webgl2", { premultipliedAlpha: false, antialias: false });
 
 function Start() {
     Init();
